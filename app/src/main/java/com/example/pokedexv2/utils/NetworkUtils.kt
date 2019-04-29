@@ -8,11 +8,10 @@ const val POKEMON:String= "pokemon"
 
 class NetworkUtil {
     companion object {
-        fun buildURL(pokeId:String): URL {
+        fun buildURL(): URL {
             val buildUri = Uri.parse(BASE_URL)
                 .buildUpon()
                 .appendPath(POKEMON)
-                .appendPath(pokeId)
                 .build()
 
             val url= URL(buildUri.toString())
@@ -21,7 +20,7 @@ class NetworkUtil {
         }
 
         fun getResponseFRomHttpUrl(url: URL) : String{
-
+            return  url.readText()
         }
     }
 }
