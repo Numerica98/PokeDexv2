@@ -6,6 +6,6 @@ package com.example.pokedexv2.models.API
  * @property base_stat The base value of the stat.
  * */
 
-data class PokemonStat (val stat:List<NamedAPIResource>,
+data class PokemonStat (val stat:NamedAPIResource,
                         val effort: Int,
                         val base_stat: Int)

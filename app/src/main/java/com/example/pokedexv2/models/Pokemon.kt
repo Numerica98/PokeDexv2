@@ -16,5 +16,5 @@ data class Pokemon (val id:Int,
                     val name:String,
                     val height:Int,
                     val weight:Int,
-                    val sprites:List<PokemonSprites>,
+                    val sprites:PokemonSprites,
                     val stats:List<PokemonStat>)
